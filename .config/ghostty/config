@@ -1,0 +1,8 @@
+# Font
+
+font-family = "JetBrains Mono SemiBold"
+font-size = 16
+
+confirm-close-surface = false
+
+background-opacity = 0.9
