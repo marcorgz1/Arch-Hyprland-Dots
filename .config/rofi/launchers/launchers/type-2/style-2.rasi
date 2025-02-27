@@ -1,0 +1,110 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+/* Main Config (wallpaper) */
+
+@import "~/.config/rofi/config.rasi"
+
+@import "shared/colors.rasi"
+@import "shared/fonts.rasi"
+
+/* ---- Configuration ---- */ 
+configuration {
+    modi: "drun,run,filebrowser";
+    font: "Hack Nerd Font Bold 12";
+    show-icons: true;
+    icon-theme: "Papirus";
+}
+
+/* ---- Window ---- */
+window {
+    width: 80%;
+    height: 70%;
+    background-color: rgba(30, 30, 30, 0.95);
+    border-radius: 15px;
+    /* border: 2px solid #4a4a4a; */
+}
+
+/* ---- Mainbox ---- */
+mainbox {
+    children: ["inputbar", "listview"];
+    padding: 20px;
+    spacing: 15px;
+}
+
+/* ---- Input Bar ---- */
+inputbar {
+    background-color: rgba(50, 50, 50, 0.8);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 0px 5px;
+}
+
+entry {
+    expand: true;
+    placeholder: "    Search wallpaper...";
+    placeholder-color: rgba(200, 200, 200, 0.5);
+    font: "Inter 13";
+    padding: 5px 10px;
+}
+
+/* ---- Listview ---- */
+listview {
+    columns: 4;
+    lines: 2;
+    spacing: 25px;
+    padding: 20px 10px;
+    flow: horizontal;
+    fixed-height: true;
+    cycle: true;
+    dynamic: true;
+    scrollbar: true;
+}
+
+/* ---- Scrollbar ---- */
+scrollbar {
+    handle-width: 5px;
+    handle-color: #666666;
+    background-color: rgba(60, 60, 60, 0.5);
+    margin: 0 5px;
+}
+
+/* ---- Element ---- */
+element {
+    orientation: vertical;
+    padding: 15px;
+    spacing: 10px;
+    border-radius: 12px;
+    background-color: rgba(40, 40, 40, 0.6);
+    cursor: pointer;
+}
+
+element selected {
+    background-color: rgba(70, 130, 180, 0.7);
+    /* border: 2px solid #78aeed; */
+}
+
+element-icon {
+    size: 128px;
+    horizontal-align: 0.5;
+    cursor: inherit;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    padding: 8px;
+    text-color: #ffffff;
+    font: "Hack Nerd Font Regular 18";
+}
+
+/* ---- Animations ---- */
+/*
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+window {
+    animation: fadeIn 0.2s ease-in-out;
+}
+*/
+
