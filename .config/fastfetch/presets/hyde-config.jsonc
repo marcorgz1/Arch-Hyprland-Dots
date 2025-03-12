@@ -1,10 +1,10 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "source": "/home/marco1/.local/share/fastfetch/images/anime-boy-lavender.jpg",
+    "source": "/home/marco1/.local/share/fastfetch/ascii/arch.txt",
     "height": 18,
     "padding": {
-        "top": 2,
+        "top": 6,
         "left": 2
     }
   },
@@ -12,6 +12,8 @@
     "separator": " : "
   },
   "modules": [
+    "break",
+    "break",
     {
       "type": "custom",
       "format": "\u001b[36m   󰄛  コンピューター"
